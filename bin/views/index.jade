@@ -1,0 +1,146 @@
+doctype html
+html( lang="en" )
+    head
+        title Arnaud Dassy - Portfolio
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1" )
+        meta( name="description" content="Web developer belge de 20 ans, venez découvrir mon travail !" )
+        meta( name="author" content="Arnaud Dassy" )
+        link( rel="stylesheet" href='./css/new/style.css')
+    body
+        header#home
+            .header__top__banner
+                h1
+                    a( href="/home" ) Arnaud&nbsp;Dassy
+                        span &lt;&nbsp;Web&nbsp;Developer&nbsp;/&gt;
+                div.button_menu__container
+                    span.button_menu.fa.fa-bars#button_menu( tabindex="0" )
+                .nav
+                    ul
+                        li
+                            a( href="#home" ) Accueil
+                        li
+                            a( href="#apropos" ) A propos
+                        li
+                            a( href="#works" ) Travaux
+                        li
+                            a( href="#contact" ) Contact
+            .header__container__message
+                p.banner__message__header Coucou
+                p.banner__message__content Je m'appelle Arnaud, j'ai 20 ans et je suis web dev !
+                p.banner__message__button
+                    a( href="#apropos" ) En apprendre plus
+        main
+
+            section#apropos.apropos
+                header
+                    span.icon.fa.fa-star
+                    h2 A propos
+                    p Je suis actuellement étudiant en dernière année programmation web à la Haute École Rennequin Sualem.
+                main
+                    .service
+                        .service__bulle_container
+                            .bulle.bulle_print
+                        h3 Print
+                        p Création de flyers, posters, affiches ou autres, ma gamme de services est très large afin de répondre au mieux à vos besoins !
+                    .service
+                        .service__bulle_container
+                            .bulle.bulle_front
+                        h3 Front
+                        p Vous avez besoin de repenser l'apparence de votre site&nbsp;? De le mettre à jour pour un support mobile ? Ne cherchez plus, vous avez trouvé la bonne personne !
+                    .service
+                        .service__bulle_container
+                            .bulle.bulle_back
+                        h3 Back
+                        p Je peux également m'occuper de la programmation côté serveur. Je travaille en Node ou en PHP.
+
+            section.works#works
+                header
+                    h2 Quelques travaux
+                main
+                    article.work
+                        .bulle__container
+                            .bulle
+                                a( href="./work/1" )
+                                    img( src="./img/works/work_1.png" alt='vignette travail' )
+                        header
+                            h3 Couverture pour un événement facebook
+                        main
+                            p Création d'une image de couverture pour un événement facebook. Créé sous Photoshop et Illustrator.
+
+                    article.work
+                        .bulle__container
+                            .bulle
+                                a( href="./work/2" )
+                                    img( src="./img/works/work_2.png" alt='vignette travail' )
+                        header
+                            h3 Javascript platform game
+                        main
+                            p Jeu de plateforme basique réalisé en javascript et canvas.
+
+                    article.work
+                        .bulle__container
+                            .bulle
+                                a( href="./work/3" )
+                                    img( src="./img/works/work_3.png" alt='vignette travail' )
+                        header
+                            h3 Centre Alfa
+                        main
+                            p Refonte graphique du site web de l'ASBL Centre Alfa. Premier projet réalisé sous wordpress !
+
+                    article.work
+                        .bulle__container
+                            .bulle
+                                a( href="./work/4" )
+                                    img( src="./img/works/work_4.png" alt='vignette travail' )
+                        header
+                            h3 CS:GO Wheel
+                        main
+                            p Projet de fin d'étude, machine à sous en faites en Javascript, le côté serveur est géré en Node.
+
+                //footer
+                //    a( href="#" ) Voir plus
+        .contact#contact
+            .contact__container
+                .contact__header
+                    h2 Me contacter
+                    p Vous avez une question, une idée ou simplement envie de travailler avec moi ? Je suis là pour vous !
+                form( method="post" action="./contact/send" )
+                    span.fa.fa-envelope.icon
+                    .form__row
+                        .form__container
+                            label( for="nom" ) Nom
+                            input#nom( type="text" name="nom" )
+                        .form__container
+                            label( for="email" ) Email
+                            input#email( type="email" name="email" )
+                    .form__row
+                        .form__container
+                            label( for="objet" ) Objet
+                            input#objet( type="text" name="objet" )
+                    .form__row
+                        .form__container
+                            label( for="message" ) Message
+                            textarea#message( name="message" rows="7" resize="none" )
+                    input(type="text" id="useless" placeholder='NE PAS REMPLIR CE CHAMP' style="position:absolute;left:-8000px;display:none;")
+                    .form__row
+                        input#send( type="button" value="Envoyer" )
+
+        footer
+            ul
+                li
+                    a.icon.circle.fa.fa-twitter( href="#" )
+                        span.label Twitter
+                li
+                    a.icon.circle.fa.fa-facebook( href="#" )
+                        span.label Facebook
+                li
+                    a.icon.circle.fa.fa-google-plus( href="#" )
+                        span.label Google+
+                li
+                    a.icon.circle.fa.fa-github( href="#" )
+                        span.label Github
+            .copy &copy; Arnaud Dassy - 2016
+        script( src='../js/script.js' )
+

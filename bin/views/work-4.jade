@@ -1,0 +1,64 @@
+doctype html
+html( lang="en" )
+    head
+        title Arnaud Dassy - Portfolio
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1" )
+        meta( name="description" content="Web developer belge de 20 ans, venez découvrir mon travail !" )
+        meta( name="author" content="Arnaud Dassy" )
+        link( rel="stylesheet" href='../css/new/style.css')
+    body
+        .header__top__banner
+            h1
+                a( href="/home" ) Arnaud Dassy
+                    span &lt; Web Developer /&gt;
+            div.button_menu__container
+                span.button_menu.fa.fa-bars#button_menu( tabindex="0" )
+            .nav
+                ul
+                    li
+                        a( href="../home#home" ) Accueil
+                    li
+                        a( href="../home#apropos" ) A propos
+                    li
+                        a( href="../home#works" ) Travaux
+                    li
+                        a( href="../home#contact" ) Contact
+        .work__container
+            span.icon.fa.fa-archive
+            .work
+                h2 PFE - CSGO Wheel
+                div
+                    img( src="../img/full/work_4.png" )
+                h3 Logiciels ou langages utilisés
+                ul
+                    li HTML
+                    li CSS
+                    li Javascript
+                    li Node
+                div
+                    a.button( href='http://arnauddassy.be/wordpress' ) Découvrir le site
+            .arrows
+                .left
+                    a( href="./3" )
+                        span.mini-icon.fa.fa-angle-left
+                        span.text__link Précédent
+
+        footer
+            ul
+                li
+                    a.icon.circle.fa.fa-twitter( href="#" )
+                        span.label Twitter
+                li
+                    a.icon.circle.fa.fa-facebook( href="#" )
+                        span.label Facebook
+                li
+                    a.icon.circle.fa.fa-google-plus( href="#" )
+                        span.label Google+
+                li
+                    a.icon.circle.fa.fa-github( href="#" )
+                        span.label Github
+            .copy &copy; Arnaud Dassy - 2016
+
+

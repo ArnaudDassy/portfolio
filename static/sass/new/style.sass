@@ -1,0 +1,636 @@
+@import url("font-awesome.min.css")
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900")
+
+// Reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+body
+  line-height: 1
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  -webkit-text-size-adjust: none
+
+// Border-box
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+// Style
+body
+  text-align: center
+  font-family: Lato, Arial, sans-serif
+  font-size: 20px
+  color: #7c8081
+  &>header
+    width: 100%
+    padding: 6em 0
+    background-attachment: scroll, scroll, scroll, fixed
+    background-image: url("../../img/stuff/light-bl.svg"), url("../../img/stuff/light-br.svg"), url("../../img/stuff/overlay.png"), url("../../img/banner.png")
+    background-position: left bottom, right bottom, left top, center top
+    background-repeat: no-repeat, no-repeat, repeat, no-repeat
+    background-size: 25em auto, 25em auto, auto auto, cover
+    text-align: center
+h1
+  font-weight: bold
+  vertical-align: middle
+  display: flex
+  align-items: center
+  text-transform: uppercase
+  span
+    font-weight: 200
+    padding-left: 0.5em
+h2
+  font-size: 2em
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  font-weight: 600
+  margin: 24px 0
+.header__top__banner
+  position: fixed
+  z-index: 1000
+  top: 0
+  width: 100%
+  display: flex
+  padding: 0.5em 2.5em
+  background-color: white
+  color: #7c8081
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.3)
+  a
+    color: inherit
+    text-decoration: none
+.nav
+  flex: 1
+  ul
+    display: flex
+    justify-content: flex-end
+  li
+    padding: 0.5em 1em
+    transition: all linear 0.2s
+    border: 1px solid white
+    margin-left: 0.5em
+    &:hover
+      background-color: rgba(0,0,0,0.05)
+      border: 1px solid rgba(0,0,0,0.2)
+    a
+      font-weight: 200
+      text-transform: uppercase
+.button
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+  border: 1px solid
+  color: #7c8081
+  cursor: pointer
+  display: inline-block
+  font-size: 0.8em
+  font-weight: 900
+  letter-spacing: 2px
+  line-height: 3.75em
+  min-width: 18em
+  padding: 0 0.75em
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  margin: 0 auto
+  margin-top: 48px
+  transition: color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s
+  &:hover
+    background-color: rgba(188,202,206,0.15)
+.header__container__message
+  background: rgba(52, 27, 43, 0.5) none repeat scroll 0 0
+  color: white
+  display: inline-block
+  padding: 3em
+  text-align: center
+  width: 22em
+.banner__message__header
+  font-size: 2em
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 3px
+  border-top: 2px solid white
+  border-bottom: 2px solid white
+  padding: 0.2em 0
+  margin-bottom: 24px
+.banner__message__content
+  letter-spacing: 0.1em
+  margin-bottom: 24px
+  text-transform: uppercase
+  font-weight: lighter
+  line-height: 1.5
+.banner__message__button a
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+  border: 1px solid
+  cursor: pointer
+  display: inline-block
+  font-size: 0.8em
+  font-weight: 900
+  letter-spacing: 2px
+  line-height: 3.75em
+  min-width: 18em
+  padding: 0 0.75em
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  color: white
+  text-decoration: none
+  transition: color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s
+  &:hover
+    background-color: rgba(188,202,206,0.15)
+
+body>main
+  padding: 5em 0
+  background-color: #eeeeee
+  background-image: url("../../img/stuff/dark-tl.svg"), url("../../img/stuff/dark-tr.svg"), url("../../img/stuff/dark-bl.svg"), url("../../img/stuff/dark-br.svg")
+  background-position: left top, right top, left bottom, right bottom
+  background-repeat: no-repeat
+  background-size: 25em auto
+  .icon
+    font-size: 3em
+    opacity: .35
+  section
+    max-width: 1400px
+    margin: 0 auto
+  .bulle
+    background-position: center center
+    background-size: 100% auto
+    border: 5px solid white
+    border-radius: 100px
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2)
+    display: inline-block
+    height: 200px
+    overflow: hidden
+    transition: all 0.2s linear 0s
+    width: 200px
+  .bulle_print
+    background-image: url("../../img/print.png")
+  .bulle_front
+    background-image: url("../../img/front.png")
+    background-size: 155% 120%
+  .bulle_back
+    background-image: url("../../img/back.png")
+    background-position: left center
+    background-size: 300% 250%
+  h3
+    font-size: 1.5em
+    font-weight: lighter
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    margin: 24px 0
+
+.apropos
+  header p
+    font-weight: 200
+  main
+    margin: 48px 0
+    display: flex
+    justify-content: space-between
+    p
+      width: 80%
+      margin: 0 auto
+      font-weight: lighter
+      line-height: 1.5
+
+.works
+  margin-top: 96px
+  background-color: white
+  padding: 24px
+  padding-bottom: 48px
+  article
+    width: 50%
+    display: inline-block
+    height: 400px
+    vertical-align: top
+  h3
+    font-size: 20px
+  main
+    p
+      width: 60%
+      margin: 0 auto
+      font-weight: lighter
+      line-height: 1.3
+  img
+    width: 100%
+  footer
+    margin-top: 48px
+    a
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+      border: 1px solid
+      color: #7c8081
+      cursor: pointer
+      display: inline-block
+      font-size: 0.8em
+      font-weight: 900
+      letter-spacing: 2px
+      line-height: 3.75em
+      min-width: 18em
+      padding: 0 0.75em
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      transition: color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s
+      &:hover
+        background-color: rgba(188,202,206,0.15)
+
+.contact
+  width: 100%
+  padding: 3em 0
+  background-attachment: scroll, scroll, scroll, fixed
+  background-image: url("../../img/stuff/light-tl.svg"), url("../../img/stuff/light-tr.svg"), url("../../img/stuff/overlay.png"), url("../../img/banner.png")
+  background-position: left top, right top, left top, center bottom
+  background-repeat: no-repeat, no-repeat, repeat, no-repeat
+  background-size: 25em auto, 25em auto, auto auto, cover
+  text-align: center
+  color: white
+.contact__header *
+  text-shadow: 1px 1px 1px #000
+.contact__container
+  max-width: 1400px
+  margin: 0 auto
+  form
+    margin: 48px 0
+    background-color: white
+    padding: 48px
+    color: #7c8081
+    &>span
+      font-size: 3em
+      opacity: 0.35
+  .error
+    color: #d40d0d
+    input, textarea
+      border: 1px solid #d40d0d
+    p
+      text-align: left
+      font-size: 0.8em
+      padding-left: 6px
+      padding-top: 6px
+.form__row
+  width: 100%
+  margin: 24px 0
+  display: flex
+  div
+    flex: 1
+    *
+      display: block
+      width: 100%
+    label
+      text-align: left
+      padding-bottom: 6px
+    input
+      padding: 12px 6px
+      font-size: 1em
+      color: #7c8081
+      font-weight: 300
+      &:focus
+        border: 1px solid #64c76b
+    textarea
+      resize: none
+      padding: 12px 6px
+      font-size: 1em
+      color: #7c8081
+      font-family: Lato, Arial, sans-serif
+      line-height: 1.3
+      font-weight: 300
+      &:focus
+        border: 1px solid #64c76b
+
+
+  &:nth-child(2)
+    div:first-child
+      margin-right: 24px
+    div:last-child
+      margin-left: 24px
+  &:last-child
+    text-align: center
+    input
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0
+      border: 1px solid
+      color: #7c8081
+      cursor: pointer
+      display: inline-block
+      font-size: 0.8em
+      font-weight: 900
+      letter-spacing: 2px
+      line-height: 3.75em
+      min-width: 18em
+      padding: 0 0.75em
+      text-align: center
+      text-decoration: none
+      text-transform: uppercase
+      margin: 0 auto
+      margin-top: 48px
+      transition: color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s
+      &:hover
+        background-color: rgba(188,202,206,0.15)
+
+body>footer
+  padding: 3em 0
+  li
+    display: inline-block
+    line-height: 1em
+    padding-left: 0.5em
+.icon.circle.fa-twitter
+  background: #70aecd none repeat scroll 0 0
+  color: #fff
+.icon.circle.fa-facebook
+  background: #7490c3 none repeat scroll 0 0
+  color: #fff
+.icon.circle.fa-google-plus
+  background: #db6b67 none repeat scroll 0 0
+  color: #fff
+.icon.circle.fa-github
+  background: #dcad8b none repeat scroll 0 0
+  color: #fff
+
+
+.icon.circle
+  border: 0 none
+  border-radius: 100%
+  display: inline-block
+  font-size: 1.25em
+  height: 2.25em
+  left: 0
+  line-height: 2.25em
+  text-align: center
+  text-decoration: none
+  top: 0
+  transition: all 0.2s ease-in-out 0s
+  width: 2.25em
+  &:hover
+    top: -0.25em
+    opacity: 0.9
+
+.icon
+  position: relative
+  text-decoration: none
+
+.icon::before
+  font-family: FontAwesome
+  font-style: normal
+  font-weight: normal
+  text-transform: none !important
+.icon > .label
+  display: none
+
+.copy
+  margin-top: 1em
+  font-weight: 200
+
+//Work
+
+.work__container
+  background-color: #eeeeee
+  min-height: 100vh
+  background-image: url("../../img/stuff/dark-tl.svg"), url("../../img/stuff/dark-tr.svg"), url("../../img/stuff/dark-bl.svg"), url("../../img/stuff/dark-br.svg")
+  background-position: left top, right top, left bottom, right bottom
+  background-repeat: no-repeat
+  background-size: 25em auto
+  padding: 7em 0
+  .work
+    margin: 2em auto
+    max-width: 1400px
+    text-align: left
+    background-color: white
+    padding: 2em
+    img
+      padding: 2em 0
+      display: inline-block
+      margin: 0 auto
+      max-height: 500px
+    h2
+      font-weight: 200
+    h3
+      font-size: 1.5em
+      margin-bottom: 1em
+    li
+      list-style: circle
+      margin-left: 1em
+    div
+      text-align: center
+  .icon
+    font-size: 3em
+    opacity: 0.35
+.arrows
+  max-width: 1400px
+  margin: 0 auto
+  display: flex
+  padding: 0 1em
+  a
+    text-decoration: none
+    color: #7c8081
+    text-transform: uppercase
+    font-weight: 200
+    span
+      transition: all linear 0.2s
+  div
+    flex: 1
+  .right
+    text-align: right
+    a span
+      padding-left: 1em
+    a:hover
+      span
+        padding-left: 0.2em
+  .left
+    text-align: left
+    a span
+      padding-right: 1em
+    a:hover
+      span
+        padding-right: 0.2em
+
+// Redirect
+@keyframes check
+  from
+    transform: rotate(0deg)
+    color: #7c8081
+  to
+    transform: rotate(720deg)
+    color: #64c76b
+
+.redirect
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.redirect__container
+  background-color: #eeeeee
+  padding: 7em 0
+  flex: 1
+  display: flex
+  flex-direction: column
+  justify-content: center
+.check
+  font-size: 7em
+  animation: check 0.5s 0.4s linear forwards
+  position: relative
+  width: 7em
+  margin: 0 auto
+.great__message
+  font-size: 3em
+.small__message
+  font-weight: 200
+  margin-top: 2em
+
+.button_menu
+  display: none
+
+// Responsive
+
+@media screen and (max-width: 1600px)
+  body>main, .contact, .work__container
+    padding-left: 24px
+    padding-right: 24px
+
+@media screen and (max-width: 1280px)
+  body
+    font-size: 16px
+  .work__container
+    .work img
+      max-height: none
+      width: 100%
+
+@media screen and (max-width: 850px)
+  h2, h3, h4, p
+    line-height: 1.5
+  .apropos>main
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    .service
+      margin-top: 48px
+      max-width: 75%
+      &:first-child
+        margin-top: 0
+  .works
+    article
+      width: 75%
+      height: auto
+      margin-top: 48px
+      &:first-child
+        margin-top: 0
+  .form__row
+    display: block
+  .form__row:nth-child(2) div:last-child, .form__row:nth-child(2) div:first-child
+    margin: 0
+  .form__row:nth-child(2) div:last-child
+    margin-top: 24px
+  body>header, .contact
+    background-size: 15em auto, 15em auto, auto auto, cover
+  body>main, .work__container
+    background-size: 15em auto
+  .nav
+    position: fixed
+    top: -350px
+    animation: 0.3s 0s ease-out forwards
+    right: 12px
+    box-shadow: 0 0 2px 2px rgba(0,0,0,0.1)
+    ul
+      flex-direction: column
+      background-color: white
+      padding: 6px 12px
+      &:before
+        font-family: FontAwesome
+        content: '\f0d8'
+        position: absolute
+        color: white
+        font-size: 2em
+        top: -18px
+        right: 32px
+    li
+      margin: 6px 0
+  .button_menu__container
+    flex: 1
+    text-align: right
+  .button_menu
+    display: inline-block
+    justify-self: flex-end
+    font-size: 2em
+    cursor: pointer
+    color: #7c8081
+    transition: all linear .2s
+    &:hover
+      color: black
+    &:focus
+      color: black
+  .button_menu.active
+    color: black
+    &:hover
+      color: #7c8081
+    &:focus
+      color: #7c8081
+  .nav.active
+    animation-name: showMenu
+  .nav.hide
+    animation-name: hideMenu
+  p
+    font-size: 1.2em
+
+@keyframes showMenu
+  from
+    top: -350px
+  to
+    top: 60px
+@keyframes hideMenu
+  from
+    top: 60px
+  to
+    top: -350px
+
+@media screen and (max-width: 500px)
+  body>header, .contact
+    background-size: 0em auto, 0em auto, auto auto, cover
+  body>main, .work__container
+    background-size: 0em auto
+  .header__top__banner
+    padding-left: 24px
+  .apropos main p
+    width: 100%
+  .apropos > main .service
+    max-width: none
+  .works article
+    width: 100%
+  .works main p
+    width: 100%
+  .contact__container form
+    padding: 24px
+  .form__row:last-child input
+    margin: 0
+  .form__row:last-child
+    margin-bottom: 0
+  .text__link
+    padding: 12px 0
+    font-size: 0.8em
+@media screen and (max-width: 400px)
+  h1 span
+    display: block
+  .header__container__message
+    width: 18em
+  .banner__message__button
+    min-width: 12em
+  .form__row:last-child input
+    min-width: 100%
+  .button
+    min-width: 100%

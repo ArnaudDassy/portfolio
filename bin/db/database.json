@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1450690807144",
+    "filtre": "3d",
+    "img_path": "./img/works/img_path-1450690807144.png",
+    "img_alt": "Vignette projet créature",
+    "title": "La créature",
+    "description": "        Dans le cadre d'un projet 3D, nous devions réaliser une créature à la forme anthropique.\r\n\r\n        Ceci est un projet qui m'a pris pas mal de temps, je dois bien l'avouer. Mais au final, j'en suis plutôt fière ! Réalisé à l'aide du logiciel Maya (version 2014 je pense hum hum), ce projet ne m'a pas toujours facilité la vie ! Entre les crashs de maya, les problèmes de symétrie et d'architecture, j'en ai bavé !\r\n\r\n        J'ai décidé non pas de modéliser un humain, mais plutôt une créature dont les caractéristiques s'en rapproche. Je me suis largement inspiré de Goulum, de la sage du Seigneur des Anneaux.\r\n\r\n        Par rapport aux soucis pratique du rendu, j'ai décidé d'utiliser des textures simples pour la peau, les cornes etc. Le morceau de tissu est quant à lui réalisé avec une texture cuir. J'ai créé la texture des yeux sous photoshop.\r\n\r\n        Pour accentuer le côté 'glauque' de la chose, je décidé de placer mon copain dans une grotte (modéliser par mes soins bien sur, faut pas déconner hèhè), avec un peu de décor. Les couleurs sont froides.\r\n",
+    "softwares": [
+      {
+        "name": "photoshop",
+        "path": "./img/logos/photoshop.png"
+      },
+      {
+        "name": "maya",
+        "path": "./img/logos/maya.png"
+      }
+    ],
+    "img_small_path": "./img/works/small-img_path-1450690807144.png"
+  },
+  {
+    "id": "1450690884053",
+    "filtre": "3d",
+    "img_path": "./img/works/img_path-1450690884053.png",
+    "img_alt": "Vignette projet robot",
+    "title": "Robot",
+    "description": "Mon premier gros projet en infographie. Il m'a demandé pas mal de temps, environ 4 mois. J'ai modélisé et texturé (textures toutes faites ceci dit) moi même le bonhomme.\r\n\r\nLe rendu est assez travaillé et m'a permis d'apprendre pas mal de choses. Le rendu a été légérement retravaillé sous photoshop.",
+    "softwares": [
+      {
+        "name": "photoshop",
+        "path": "./img/logos/photoshop.png"
+      },
+      {
+        "name": "maya",
+        "path": "./img/logos/maya.png"
+      }
+    ],
+    "img_small_path": "./img/works/small-img_path-1450690884053.png"
+  },
+  {
+    "id": "1450962841783",
+    "filtre": "2d",
+    "img_path": "./img/works/img_path-1450962841750.png",
+    "img_alt": "vignette projet Die Antwoord",
+    "title": "Die Antwoord",
+    "description": "Pas grand chose à dire ici. Le but était de réaliser un visuel sur une personne ou un groupe de personne (fictifs ou non), correspondant évidemement le plus possible au caractère et à l'identité visuelle de la cible.\r\n\r\nLa contrainte était d'utiliser le moins d'image possible tout en explorant les fonctionnalités des différents filtres Photoshop.\r\n\r\nMission accomplie ?",
+    "softwares": [
+      {
+        "name": "photoshop",
+        "path": "./img/logos/photoshop.png"
+      }
+    ],
+    "img_small_path": "./img/works/small-img_path-1450962841750.png"
+  },
+  {
+    "id": "1450963759324",
+    "filtre": "web",
+    "img_path": "./img/works/img_path-1450963759311.PNG",
+    "img_alt": "Vignette projet javascript",
+    "title": "Javascript platformer",
+    "description": "<a href='http://arnauddassy.be/game' class='link-work'> Découvrir le jeu </a>\r\n\r\nVoici donc un petit jeu que j'ai réalisé en Canvas (HTML 5) et Javascript. Ce projet m'a fait énormément avancé en JS et m'a permis d'apprendre un tas de trucs géniaux !\r\n\r\nBon, qu'on s'entende bien, c'est pas le jeu de l'année, et certes il y a quelques petits bugs, mais il m'aurait fallu beaucoup plus de temps pour le perfectionner .. :(\r\n\r\nBon sinon pas grand chose à dire, je n'ai pas créé le fond, les objets, le personnage. J'ai juste découpé et créé un sprite moi même. Puis bon, c'est quand même du 60 fps, donc ça pète.\r\n\r\nAllez vous amuser !",
+    "softwares": [
+      {
+        "name": "photoshop",
+        "path": "./img/logos/photoshop.png"
+      },
+      {
+        "name": "htmlcss",
+        "path": "./img/logos/htmlcss.png"
+      }
+    ],
+    "img_small_path": "./img/works/small-img_path-1450963759311.PNG"
+  },
+  {
+    "id": "1453206597456",
+    "filtre": "web",
+    "img_path": "./img/works/img_path-1453206597433.jpg",
+    "img_alt": "Je sais pas",
+    "title": "Une refonte pour pornhub",
+    "description": "Comme dit dans le  titre",
+    "softwares": [
+      {
+        "name": "photoshop",
+        "path": "./img/logos/photoshop.png"
+      },
+      {
+        "name": "nodejs",
+        "path": "./img/logos/nodejs.png"
+      },
+      {
+        "name": "htmlcss",
+        "path": "./img/logos/htmlcss.png"
+      },
+      {
+        "name": "illustrator",
+        "path": "./img/logos/illustrator.png"
+      },
+      {
+        "name": "nodejs",
+        "path": "./img/logos/nodejs.png"
+      },
+      {
+        "name": "htmlcss",
+        "path": "./img/logos/htmlcss.png"
+      }
+    ],
+    "img_small_path": "./img/works/small-img_path-1453206597433.jpg"
+  }
+]

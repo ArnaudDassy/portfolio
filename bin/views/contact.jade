@@ -1,0 +1,28 @@
+extends ./layout.jade
+
+block main
+    section.contact
+        h2.toHide Contact
+        h2 Une idée, un projet ?
+        form(action='./contact/send' method='post')
+            .contact__input
+                label(for='name') Nom
+                input(type='text' name='name' id='name')
+                .contact__input__background
+            .contact__input
+                label(for='email') Email
+                input(type='text' name='email' id='email')
+                .contact__input__background
+            .contact__input
+                label(for='objet') Objet
+                input(type='text' name='objet' id='objet')
+                .contact__input__background
+            .contact__input.textarea
+                label(for='message') Message
+                textarea(id='message' name='message')
+                .contact__input__background
+            input(type="hidden" name="sendable" value="no")
+            .contact__input__submit
+                input(type="button" name="submit" value="Envoyer" id="send")
+                .contact__input__background
+            input(type="text" id="useless" placeholder='NE PAS REMPLIR CE CHAMP' style="position:absolute;left:-8000px;display:none;")

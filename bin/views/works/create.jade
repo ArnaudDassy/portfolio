@@ -1,0 +1,68 @@
+doctype html
+html( lang="en" )
+    head
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1" )
+        meta( name="description" content="Web developer belge de 20 ans, venez découvrir mon travail !" )
+        meta( name="author" content="Arnaud Dassy" )
+        link( rel="stylesheet" href='../sass/style.css')
+        title Arnaud Dassy - Home
+    body
+        section.works_create
+            h2 Ajouter un projet
+            form(action='./save' method='post' enctype="multipart/form-data")
+                fieldset.works_create__filters
+                    legend Filtre
+                    .create__input
+                        input(type='radio' name='filtre' id='filtreweb' value='web')
+                        label(for='filtreweb') Web
+                    .create__input
+                        input(type='radio' name='filtre' id='filtre2d' value='2d')
+                        label(for='filtre2d') 2D
+                    .create__input
+                        input(type='radio' name='filtre' id='filtre3d' value='3d')
+                        label(for='filtre3d') 3D
+                .create__input
+                    label(for='title') Titre
+                    input(type='text' name='title' id='title')
+                .create__input
+                    label(for='description') Description
+                    textarea(name='description' id='description')
+                fieldset
+                    legend Image
+                    .create__input
+                        input(type='file' value='Séléctionner une image' name='img_path')
+                    .create__input
+                        label(for='img_alt') Alt image
+                        input(type='text' name='img_alt' id='img_alt')
+                fieldset.works_create__tools
+                    legend Outils
+                    div
+                        .create__input
+                            input(type='checkbox' name='htmlcss' id='htmlcss')
+                            label(for='htmlcss') HTML/CSS/JS
+                        .create__input
+                            input(type='checkbox' name='php' id='php')
+                            label(for='php') PHP
+                        .create__input
+                            input(type='checkbox' name='nodejs' id='nodejs')
+                            label(for='nodejs') NodeJS
+                        .create__input
+                            input(type='checkbox' name='wordpress' id='wordpress')
+                            label(for='wordpress') Wordpress
+                        .create__input
+                            input(type='checkbox' name='photoshop' id='photoshop')
+                            label(for='photoshop') Photoshop
+                        .create__input
+                            input(type='checkbox' name='illustrator' id='illustrator')
+                            label(for='illustrator') Illustrator
+                        .create__input
+                            input(type='checkbox' name='premiere' id='premiere')
+                            label(for='premiere') Premiere
+                        .create__input
+                            input(type='checkbox' name='maya' id='maya')
+                            label(for='maya') Maya
+                fieldset
+                    input(type='password' name='mdp')
+                    input(type='submit' value='Soumettre')

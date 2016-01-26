@@ -1,0 +1,22 @@
+include ./header.jade
+header
+    ul
+        li
+            a.menu__home(href='/home' title='Naviguer vers la page Home')
+                span Home
+        li
+            a.menu__about(href='/about' title='Naviguer vers la page About')
+                span About
+        li
+            a.menu__works(href='/works' title='Naviguer vers la page Works')
+                span Works
+        li
+            a.menu__contact(href='/contact' title='Naviguer vers la page Contact')
+                span Contact
+main
+    h1.toHide Portfolio - Arnaud Dassy
+    block main
+
+script(src='./js/bundle.min.js')
+
+

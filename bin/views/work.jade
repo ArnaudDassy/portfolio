@@ -1,0 +1,29 @@
+doctype html
+html( lang="en" )
+    head
+        meta( charset="utf-8" )
+        meta( http-equiv="X-UA-Compatible" content="IE=edge" )
+        meta( name="viewport" content="width=device-width, initial-scale=1" )
+        meta( name="description" content="Web developer belge de 20 ans, venez découvrir mon travail !" )
+        meta( name="author" content="Arnaud Dassy" )
+        link( rel="stylesheet" href='../sass/style.css')
+        title Arnaud Dassy - Work
+    body
+        header
+            ul
+                li
+                    a.menu__home(href='/home' title='Naviguer vers la page Home')
+                        span Home
+                li
+                    a.menu__about(href='/about' title='Naviguer vers la page About')
+                        span About
+                li
+                    a.menu__works(href='/works' title='Naviguer vers la page Works')
+                        span Works
+                li
+                    a.menu__contact(href='/contact' title='Naviguer vers la page Contact')
+                        span Contact
+        main
+            h1.toHide Portfolio - Arnaud Dassy
+            section.work
+    script(src='../js/bundle.min.js')
